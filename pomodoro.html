@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Pomodoro Timer</h1>
+    </header>
+
+    <div class="content">
+        <h2>What do you want to focus on today?</h2>
+
+        <div id="timerSection">
+            <h3>Timer</h3>
+            <div id="currentTimer">25:00</div>
+            <div class="buttons">
+                <button id="focusButton">Focus</button>
+                <button id="shortBreakButton">Short Break</button>
+                <button id="longBreakButton">Long Break</button>
+            </div>
+            <div class="control-buttons">
+                <button id="startButton">Start</button>
+                <button id="resetButton">Reset</button>
+                <button id="skipBreakButton" style="display: none;">Skip Break</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="pomodoro.js"></script>
+</body>
+</html>

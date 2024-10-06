@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pomodoro Timer</title>
+    <link rel="stylesheet" href="style4.css">
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+            alert("Thank you for your message! We'll get back to you soon."); // Display a confirmation message
+            document.getElementById("contact-form").reset(); // Reset the form
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="home.html">Home</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h2>We'd Love to Hear from You!</h2>
+        <p>If you have any questions, feedback, or suggestions regarding our Pomodoro Timer, please feel free to reach out. Your insights are valuable to us and help improve our service.</p>
+
+        <form id="contact-form" onsubmit="handleSubmit(event)" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pomodoro Timer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
